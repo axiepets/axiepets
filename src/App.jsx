@@ -12,12 +12,12 @@ function App() {
     e.preventDefault();
     setSubmitted(true);
 
-    if (code.trim() === '495653') {
-      setIsCodeCorrect(true);
-    } else {
-      setIsCodeCorrect(false);
-    }
-  };
+   if (code.trim() === '495653' || code.trim() === '556655') {
+  setIsCodeCorrect(true);
+} else {
+  setIsCodeCorrect(false);
+}
+
 
   return (
     <>
