@@ -87,7 +87,7 @@ function App() {
 
       {submitted && (
         <div className={`result-message ${isCodeCorrect ? 'success' : 'error'}`}>
-          <p>Make sure your yt name is correct; I'll verify it first before accepting you.</p>
+          <p>Make sure your youtube name is correct; I'll verify it first before accepting you.</p>
           <p>If I don't see your channel in my dashboard, I can't accept you in.</p>
           <p className="code-status">
             {isCodeCorrect ? '✅ Correct code' : '❌ Incorrect code'}
