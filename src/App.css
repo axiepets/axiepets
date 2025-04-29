@@ -1,0 +1,217 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Modern Form Styles */
+.modern-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Slightly increased from 300px */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Reduced from 1.5rem to save space */
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-title {
+  color: #2a2a2a;
+  text-align: center;
+  margin-bottom: 0.5rem; /* Reduced from 1rem */
+  font-size: 1.5rem; /* Slightly smaller */
+  font-weight: 600;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem; /* Reduced from 0.5rem */
+}
+
+.input-label {
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9rem; /* Slightly smaller */
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem; /* Reduced from 1.5rem */
+  margin-top: 0.3rem; /* Reduced from 0.5rem */
+}
+
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  color: #444;
+}
+
+.radio-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-custom {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio-input:checked + .radio-custom {
+  border-color: #e63946;
+}
+
+.radio-input:checked + .radio-custom::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e63946;
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px 12px; /* Slightly reduced */
+  margin-top: 5px; /* Reduced from 8px */
+  font-size: 0.9rem; /* Slightly smaller */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #333;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #e63946;
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+.text-input::placeholder {
+  color: #aaa;
+}
+
+.submit-button {
+  margin-top: 5px; /* Reduced from 10px */
+  padding: 10px; /* Reduced from 12px */
+  font-size: 0.95rem; /* Slightly smaller */
+  background: linear-gradient(to right, #e63946, #d62839);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.result-message {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.result-message.success {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #000000;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.result-message.error {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #000000;
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.code-status {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.telegram-link a {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.telegram-link a:hover {
+  color: #82b1ff;
+  text-decoration: underline;
+}
