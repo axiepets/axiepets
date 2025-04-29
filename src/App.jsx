@@ -56,7 +56,7 @@ function App() {
 
         <div className="form-group">
           <label className="input-label">
-            What's your name?
+            What's your Youtube Name?
             <input
               type="text"
               value={name}
